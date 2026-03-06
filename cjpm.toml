@@ -24,7 +24,7 @@
   xml2 = {path = "./lib/"}
 
 [package]
-  cjc-version = "1.0.0"
+  cjc-version = "1.1.0"
   compile-option = "-O2 -Woff unused"
   description = "xml4cj is XML text processing"
   link-option = ""
@@ -32,5 +32,14 @@
   output-type = "dynamic"
   src-dir = "src"
   target-dir = ""
-  version = "1.0.1"
+  version = "1.0.2"
   package-configuration = {}
+
+[profile]
+  [profile.build]
+    incremental = true
+    lto = ""
+  [profile.customized-option]
+    debug = "-g -Woff all -Won apilevel-check"
+    release = "--fast-math -O2 -s -Woff all -Won apilevel-check"
+  [profile.test]
