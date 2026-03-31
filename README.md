@@ -162,6 +162,20 @@
    ./build_ohos.sh
    ```
 
+5. macOS arm64 编译
+
+   macOS arm64 使用 `libs/aarch64-apple-darwin` 目录下的 Darwin 动态库，直接执行
+
+   ```
+   ./build_macos.sh
+   ```
+
+   构建完成后，会生成或刷新下面这些文件：
+
+   - `libs/aarch64-apple-darwin/libxml2.16.dylib`
+   - `libs/aarch64-apple-darwin/libxml2.dylib`
+   - `libs/aarch64-apple-darwin/libmyxml2.dylib`
+
 #### **使用脚本编译**
 
 1. 下载配置[编译脚本](https://gitcode.com/Cangjie-TPC/TPC-Test-Framework.git)
